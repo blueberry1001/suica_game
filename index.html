@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/suica_game.loader.js";
       var config = {
-        dataUrl: buildUrl + "/suica_game.data.br",
-        frameworkUrl: buildUrl + "/suica_game.framework.js.br",
-        codeUrl: buildUrl + "/suica_game.wasm.br",
+        dataUrl: buildUrl + "/suica_game.data",
+        frameworkUrl: buildUrl + "/suica_game.framework.js",
+        codeUrl: buildUrl + "/suica_game.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "suica_game",
@@ -91,6 +91,7 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
